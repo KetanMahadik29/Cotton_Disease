@@ -1,0 +1,156 @@
+/* General page background */
+body, .stApp {
+    background-color: #00203F; /* Sailor Blue background */
+    color: #FFFFFF; /* White text for main content */
+}
+
+/* Sidebar styling */
+.css-1d391kg, .stSidebar, .sidebar-content {
+    background-color: #00203F !important; /* Sailor Blue sidebar background */
+    color: #ADEFD1 !important; /* Mint text in sidebar */
+}
+
+/* Buttons */
+.stButton > button {
+    background-color: #ADEFD1; /* Mint button background */
+    color: #00203F; /* Sailor Blue text */
+    border: 2px solid #00203F;
+}
+.stButton > button:hover {
+    background-color: #00203F; /* Sailor Blue on hover */
+    color: #ADEFD1; /* Mint text on hover */
+    border: 2px solid #ADEFD1;
+}
+
+/* File uploader */
+.stFileUploader > div > button {
+    background-color: #ADEFD1;
+    color: #00203F;
+    border: 2px solid #00203F;
+}
+.stFileUploader > div > button:hover {
+    background-color: #00203F;
+    color: #ADEFD1;
+    border: 2px solid #ADEFD1;
+}
+.stFileUploader {
+    background-color: #FFFFFF; /* White background for file uploader area */
+    color: #00203F;
+}
+
+/* Headers and titles */
+h1, h2, h3, h4, h5, h6 {
+    color: #ADEFD1 !important; /* Mint for headers */
+}
+
+/* Info, Success, Warning, Error boxes */
+.stAlert {
+    background-color: #00203F !important;
+    color: #ADEFD1 !important;
+    border: 2px solid #ADEFD1;
+}
+
+/* Chatbot specific styling */
+.stChatMessage {
+    background-color: #00203F !important;
+    color: #ADEFD1 !important; /* Mint font color for chat messages */
+}
+.stChatInput > div > textarea {
+    background-color: #00203F;
+    color: #ADEFD1 !important; /* Mint font color for chat input */
+    border: 2px solid #ADEFD1;
+}
+
+/* Selectbox in sidebar */
+.stSelectbox > div > div {
+    background-color: #00203F;
+    color: #ADEFD1;
+    border: 2px solid #ADEFD1;
+}
+
+/* Links and hover effects */
+a, a:visited {
+    color: #ADEFD1 !important;
+}
+a:hover {
+    color: #FFFFFF !important;
+}/* General page background with leafy style */
+body, .stApp {
+    background-image: url('leafy_background.jpg'); /* Leafy background image */
+    background-size: cover; /* Covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    color: #FFFFFF; /* White text for readability over leafy background */
+}
+
+/* Sidebar styling */
+.css-1d391kg, .stSidebar, .sidebar-content {
+    background-color: #00203F !important; /* Sailor Blue sidebar background */
+    color: #ADEFD1 !important; /* Mint text in sidebar */
+}
+
+/* Buttons */
+.stButton > button {
+    background-color: #ADEFD1; /* Mint button background */
+    color: #00203F; /* Sailor Blue text */
+    border: 2px solid #00203F;
+}
+.stButton > button:hover {
+    background-color: #00203F; /* Sailor Blue on hover */
+    color: #ADEFD1; /* Mint text on hover */
+    border: 2px solid #ADEFD1;
+}
+
+/* File uploader */
+.stFileUploader > div > button {
+    background-color: #ADEFD1;
+    color: #00203F;
+    border: 2px solid #00203F;
+}
+.stFileUploader > div > button:hover {
+    background-color: #00203F;
+    color: #ADEFD1;
+    border: 2px solid #ADEFD1;
+}
+.stFileUploader {
+    background-color: #FFFFFF; /* White background for file uploader area */
+    color: #00203F;
+}
+
+/* Headers and titles */
+h1, h2, h3, h4, h5, h6 {
+    color: #ADEFD1 !important; /* Mint for headers */
+}
+
+/* Info, Success, Warning, Error boxes */
+.stAlert {
+    background-color: #00203F !important;
+    color: #ADEFD1 !important;
+    border: 2px solid #ADEFD1;
+}
+
+/* Chatbot specific styling */
+.stChatMessage {
+    background-color: #00203F !important;
+    color: #ADEFD1 !important; /* Mint font color for chat messages */
+}
+.stChatInput > div > textarea {
+    background-color: #00203F;
+    color: #ADEFD1 !important; /* Mint font color for chat input */
+    border: 2px solid #ADEFD1;
+}
+
+/* Selectbox in sidebar */
+.stSelectbox > div > div {
+    background-color: #00203F;
+    color: #ADEFD1;
+    border: 2px solid #ADEFD1;
+}
+
+/* Links and hover effects */
+a, a:visited {
+    color: #ADEFD1 !important;
+}
+a:hover {
+    color: #FFFFFF !important;
+}
