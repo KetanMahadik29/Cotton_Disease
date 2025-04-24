@@ -180,7 +180,7 @@ def cotton_disease_page():
 
 # -------------------- PAGE: Chatbot --------------------
 def chatbot_page():
-    st.title("MongoDB as Vector-Store 🙂")
+    st.title("ChatBot For Cotton Disease 🙂")
 
     if "messages" not in st.session_state:
         st.session_state.messages = []

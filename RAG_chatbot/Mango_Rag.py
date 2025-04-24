@@ -15,7 +15,7 @@ import uvicorn
 from dotenv import load_dotenv
 
 load_dotenv()
-app = FastAPI(
+index = FastAPI(
     title="MongoDB RAG",
     description="A simple API using FastAPI and RAG",
 )
@@ -45,8 +45,8 @@ You are a highly intelligent and professional assistant designed to answer user 
 4. Maintain a **formal, clear, and concise tone** in every response. Avoid casual language, irrelevant details, or "thought processes."
 5. Your response should **only include the final answer** — do not explain how you arrived at it, and do not repeat or reference the question.
 6. Never mention the words "context" or "question" in your output.
-7. IF the question is about diseses of cotton plants, then provide the answer the question from your own knowledge, else answer the question from the context.
-8. if the question is about asking suggestion on prevention of diseases, then look for the database if not found then  provide the answer from your own knowledge.
+7. Give answer only in english language.
+8. if the answer does not exist in the contex do not mention it that
  
 <context>
 {context}
@@ -116,7 +116,7 @@ search_kwargs = { "k": 10 })
 retrieval_chain = create_retrieval_chain(retriever, doc_chain)
 
 # Define a route
-@app.post("/api")
+@index.post("/api")
 async def invoke_retrieval(request: Request):
     input_data = await request.json()
     query = input_data.get("input", {}).get("input")
@@ -126,4 +126,4 @@ async def invoke_retrieval(request: Request):
     return {"response": "No query provided"}
 
 if __name__ == "__main__":
-    uvicorn.run(app, port=8000, host="localhost")
+    uvicorn.run(index , port=8000, host="localhost")

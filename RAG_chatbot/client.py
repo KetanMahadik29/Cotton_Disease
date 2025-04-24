@@ -11,7 +11,7 @@ def get_response():
     except requests.exceptions.RequestException as e:
         return f"An error occurred: {e}"
 
-st.title("MongoDB as Vector-Store :)")
+st.title("ChatBot  :)")
 
 for message in st.session_state.messages:
     with st.chat_message(message["role"]) : st.markdown(message["content"])
